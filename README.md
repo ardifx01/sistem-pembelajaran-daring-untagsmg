@@ -34,7 +34,7 @@ Tuliskan di sini teknologi-yang dipakai. Contoh:
 | ORM / DB Abstraction | **Doctrine / Doctrine DBAL** | Interaksi database lewat abstraction layer dan migrasi skema data |
 | Penyematan Dependensi | **Composer** | Manajemen paket PHP |
 | Frontend | HTML5, CSS3, JavaScript | Antarmuka untuk pengguna (mahasiswa, dosen) |
-| Template Engine / Templating | Twig / Blade (tergantung framework Sylius / custom) | Untuk rendering halaman web |
+| Template Engine / Templating | Twig / Blade | Untuk rendering halaman web |
 | Pengontrol versi | Git | Menyimpan riwayat kode, kolaborasi |
 | Deployment / Hosting | Web server (Apache / Nginx) + hosting lokal / shared / cloud | Menjalankan aplikasi di server web |
 | Manajemen Konfigurasi | `.env` file atau konfigurasi serupa | Menyimpan setting seperti DB credentials, environment (dev/prod), dsb |

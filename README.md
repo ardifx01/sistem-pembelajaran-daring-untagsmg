@@ -6,7 +6,7 @@ Universitas 17 Agustus 1945 Semarang (UNTAG SMG)
 ## 📚 Deskripsi
 
 SPADA Merah Putih adalah platform pembelajaran daring milik UNTAG SMG yang dibangun untuk memfasilitasi mahasiswa dan dosen dalam proses pembelajaran online.  
-Sejak awal tahun 2020, platform ini digunakan untuk mendukung kegiatan akademik secara fleksibel, tetapi pada tahun 2024 platform ini diaktifkan kembali dengan versi LMS terbaru. :contentReference[oaicite:0]{index=0}
+Sejak awal tahun 2020, platform ini digunakan untuk mendukung kegiatan akademik secara fleksibel, tetapi pada tahun 2024 platform ini diaktifkan kembali dengan versi LMS terbaru. 
 
 Nota: LMS = *Learning Management System*
 
@@ -14,9 +14,9 @@ Nota: LMS = *Learning Management System*
 
 ## 🛠 Fitur Utama
 
-- Akses kursus dari berbagai fakultas / jurusan & semester. :contentReference[oaicite:1]{index=1}  
-- Materi pembelajaran dalam berbagai format. :contentReference[oaicite:2]{index=2}  
-- Fitur pengumuman akademik dan informasi kampus. :contentReference[oaicite:3]{index=3}  
+- Akses kursus dari berbagai fakultas / jurusan & semester. 
+- Materi pembelajaran dalam berbagai format. 
+- Fitur pengumuman akademik dan informasi kampus. 
 - Akun pengguna: Mahasiswa & Dosen  
 - Sistem login dan pengelolaan kelas serta konten pembelajaran
 
@@ -46,21 +46,23 @@ Tuliskan di sini teknologi-yang dipakai. Contoh:
 Berikut panduan cepat untuk memulai proyek ini secara lokal:
 
 ```bash
-# Clone repository
+1. Clone repository
 git clone https://github.com/ardifx01/sistem-pembelajaran-daring-untagsmg.git
 cd sistem-pembelajaran-daring-untagsmg
 
-# Cek apakah ada file environment (.env) atau konfigurasi serupa
-cp .env.example .env  
+2. Install dependencies
+composer -V
+composer install
 
-# Install dependencies
-# contoh: composer install
-# atau npm install — tergantung stack-nya
+3. Konfigurasi environment
+cp .env.example .env
 
-# Setup database
-# buat database kosong
-# jalankan migrasi / seed (jika ada)
+4. Buat Database
+CREATE DATABASE spada_untagsmg CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-# Jalankan server lokal
-# contoh: php artisan serve atau command serupa
+5. Jalankan migrasi
+php bin/console doctrine:migrations:migrate
 
+6. Jalankan di server lokal
+php -S localhost:8000 -t public
+```
